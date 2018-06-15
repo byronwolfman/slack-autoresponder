@@ -1,0 +1,2 @@
+# Python 2.7.14
+slackclient==1.2.1
