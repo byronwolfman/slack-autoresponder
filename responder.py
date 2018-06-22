@@ -13,7 +13,7 @@ autoresponder_message="Your polite message goes here"
 
 # Execution starts here
 client = SlackClient(slack_token)
-if client.rtm_connect():
+if client.rtm_connect(auto_reconnect=True):
   myself = client.api_call("auth.test")["user_id"]
   while client.server.connected is True:
     events = client.rtm_read()
