@@ -16,7 +16,8 @@ Run the container:
 
     docker run \
       -e SLACK_TOKEN=$YOUR_LEGACY_TOKEN \
-      --restart=always --name autoresponder \
+      --restart=always \
+      --name autoresponder \
       -d slack-autoresponder:latest
 
 # Caveats
